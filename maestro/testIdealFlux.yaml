@@ -1,0 +1,81 @@
+appId: com.pchong.SemBarreiras
+---
+- launchApp:
+    clearState: true
+    label: "Inicializa o aplicativo Sem Barreiras"
+- tapOn:
+    text: "Cadastrar-se"
+    label: "Clica no botão cadastrar-se"
+- assertVisible:
+    text: "Boas-Vindas!"
+    label: "Verifica a presença da expressão 'Boas-Vindas!'"
+- tapOn:
+   text: "Caixa de edição texto Nome* detectado"
+   label: "Clica no campo de nome"
+- inputRandomPersonName:
+    label: "Insere um nome aleatório"
+- tapOn:
+    text: "Caixa de edição texto E-mail* detectado"
+    label: "Clica no campo de e-mail"
+- inputRandomEmail:
+    label: "Insere um email aleatório"
+- tapOn:
+    text: "Caixa de edição texto Data de Nascimento* detectado"
+    label: "Clica no campo de Data de Nascimento"
+- inputText:
+    text: "20/02/2001"
+    label: "Digita uma data de nascimento aleatória"
+- tapOn:
+    text: "Caixa de edição texto Profissão* detectado"
+    label: "Clica no campo de profissão"
+- inputText:
+    text: "Cantor"
+    label: "Digita uma profissão aleatória"
+- tapOn:
+    text: "Caixa de edição texto Celular* detectado"
+    label: "Clica no campo de celular"
+- inputText:
+    text: "51991342338"
+    label: "Digita um número aleatório"
+- scroll:
+    label: "Scrolla para achar outros campos"
+- tapOn:
+    text: "Caixa de edição texto Senha* detectado"
+    label: "Clica no campo de senha"
+- inputText:
+    text: "senha123 \n"
+    label: "Digita uma senha"
+- tapOn:
+    text: "Caixa de edição texto Confirme a Senha* detectado"
+    label: "Clica no campo de confirmar senha"
+- inputText:
+    text: "senha123 \n"
+    label: "Confirma a senha"
+- tapOn:
+    text: "Próximo"
+    label: "Clica no botão próximo"
+- assertVisible:
+    text: "Selecione as categorias que você se enquadra"
+    label: "Verifica que o texto da segunda aba do cadastro está visível"
+- tapOn:
+    text: "Visual"
+    label: "Seleciona a deficiência"
+- tapOn:
+    text: "Campo de descrição"
+    label: "Clica no campo de descrição"
+- inputText:
+    text: "Sou cego desde nascença"
+    label: "Digita a descrição da doença"
+- tapOn:
+    text: "Sinta-se livre para fornecer mais detalhes"
+    label: "Clica em um elemento aleatório da tela para esconder o teclado"
+- tapOn:
+    text: "Li e aceito os Termos de Uso"
+    point: "30%,80%"
+    label: "Marca a opção de aceite dos Termos de Uso"
+- tapOn:
+    text: "Cadastrar"
+    label: "Clica no botão de cadastrar"
+- assertVisible:
+    text: "Usuário cadastrado com sucesso"
+    label: "Verifica se o usuário foi cadastrado com sucesso"
